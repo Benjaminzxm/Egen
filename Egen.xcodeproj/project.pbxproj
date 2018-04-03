@@ -49,9 +49,12 @@
 		C94444E52058348400C97FDE /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94444C22058348400C97FDE /* ConstraintLayoutGuide+Extensions.swift */; };
 		C94444E62058348400C97FDE /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94444C32058348400C97FDE /* ConstraintLayoutSupportDSL.swift */; };
 		C94444E72058348400C97FDE /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94444C42058348400C97FDE /* ConstraintMakerRelatable.swift */; };
+		E29FC43BFE425BB72D1BB9C8 /* Pods_Egen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEFF34D5C1A0202339D71B8 /* Pods_Egen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8CEFF34D5C1A0202339D71B8 /* Pods_Egen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Egen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A11C3E3D5BB8EDF77EE94D /* Pods-Egen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egen.release.xcconfig"; path = "Pods/Target Support Files/Pods-Egen/Pods-Egen.release.xcconfig"; sourceTree = "<group>"; };
 		C9194F08204D8B24002DCAC0 /* Egen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Egen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9194F0B204D8B24002DCAC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9194F0D204D8B24002DCAC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +100,7 @@
 		C94444C22058348400C97FDE /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		C94444C32058348400C97FDE /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		C94444C42058348400C97FDE /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		D9511A8D68CF1F6C14C66590 /* Pods-Egen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Egen/Pods-Egen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +108,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29FC43BFE425BB72D1BB9C8 /* Pods_Egen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39A57CC6DFA03CFF1E9FABF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CEFF34D5C1A0202339D71B8 /* Pods_Egen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79778EE1DBD7F8365F013BF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9511A8D68CF1F6C14C66590 /* Pods-Egen.debug.xcconfig */,
+				B0A11C3E3D5BB8EDF77EE94D /* Pods-Egen.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C9194EFF204D8B24002DCAC0 = {
 			isa = PBXGroup;
 			children = (
 				C9194F0A204D8B24002DCAC0 /* Egen */,
 				C9194F09204D8B24002DCAC0 /* Products */,
+				79778EE1DBD7F8365F013BF4 /* Pods */,
+				39A57CC6DFA03CFF1E9FABF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9194F1A204D8B25002DCAC0 /* Build configuration list for PBXNativeTarget "Egen" */;
 			buildPhases = (
+				576B4653D9865BFAA732208C /* [CP] Check Pods Manifest.lock */,
 				C9194F04204D8B24002DCAC0 /* Sources */,
 				C9194F05204D8B24002DCAC0 /* Frameworks */,
 				C9194F06204D8B24002DCAC0 /* Resources */,
+				DC3AFFAC5818913749534258 /* [CP] Embed Pods Frameworks */,
+				0B994D8F73AAF84E1AE59350 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +296,72 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B994D8F73AAF84E1AE59350 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Egen/Pods-Egen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		576B4653D9865BFAA732208C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Egen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC3AFFAC5818913749534258 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Egen/Pods-Egen-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Egen/Pods-Egen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9194F04204D8B24002DCAC0 /* Sources */ = {
@@ -453,15 +546,13 @@
 		};
 		C9194F1B204D8B25002DCAC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9511A8D68CF1F6C14C66590 /* Pods-Egen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47RFMS75C8;
 				INFOPLIST_FILE = Egen/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YinTokey.Egen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -471,15 +562,13 @@
 		};
 		C9194F1C204D8B25002DCAC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A11C3E3D5BB8EDF77EE94D /* Pods-Egen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47RFMS75C8;
 				INFOPLIST_FILE = Egen/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YinTokey.Egen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
