@@ -5,9 +5,9 @@ target 'Egen' do
 
 pod 'Moya'
 pod 'Moya/RxSwift'
-pod 'RxSwift',    '~> 3.0'
-pod 'RxCocoa',    '~> 3.0'
-pod 'RxDataSources', '~> 1.0'
+pod 'RxSwift',    '~> 4.0'
+pod 'RxCocoa',    '~> 4.0'
+pod 'RxDataSources'
 pod 'Kingfisher'
 
 end
