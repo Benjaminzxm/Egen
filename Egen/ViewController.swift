@@ -11,12 +11,14 @@ import RxSwift
 import RxCocoa
 class ViewController: UIViewController {
     var tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width:414, height: 718))
+    let disposeBag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.addSubview(tableView)
         
-        self.testBehaviorSubject()
+       
     }
 
 
@@ -46,7 +48,6 @@ class ViewController: UIViewController {
     }
     
     func testPublishSubject(){
-        let disposeBag = DisposeBag()
         let publishSubject = PublishSubject<String>()
         publishSubject.subscribe{ e in
             print("subscription 1, event: \(e)")
@@ -71,7 +72,14 @@ class ViewController: UIViewController {
             print("sub1 ,event : \(e)")
         }
         
-        
+    }
+    
+    func testMap(){
+        let originalSequence = Observable.of(1,2,3)
+        originalSequence
+            .map{ $0 * 5}
+            .subscribe(onNext:{print($0)})
+            .disposed(by: disposeBag)
     }
 }
 
