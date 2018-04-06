@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         view.addSubview(tableView)
         
-
+        self.testBehaviorSubject()
     }
 
 
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
             
             }.disposed(by: disposeBag)
         
-        publishSubject.onNext("a")
+        publishSubject.on(.next("a"))
         publishSubject.onNext("b")
         
         publishSubject.subscribe{ e in
@@ -63,6 +63,15 @@ class ViewController: UIViewController {
         
         publishSubject.onNext("c")
         publishSubject.onNext("d")
+    }
+    
+    func testBehaviorSubject(){
+        let behaviorSubject = BehaviorSubject.init(value: "z")
+        behaviorSubject.subscribe{ e in
+            print("sub1 ,event : \(e)")
+        }
+        
+        
     }
 }
 
