@@ -49,6 +49,13 @@
 		C94444E52058348400C97FDE /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94444C22058348400C97FDE /* ConstraintLayoutGuide+Extensions.swift */; };
 		C94444E62058348400C97FDE /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94444C32058348400C97FDE /* ConstraintLayoutSupportDSL.swift */; };
 		C94444E72058348400C97FDE /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94444C42058348400C97FDE /* ConstraintMakerRelatable.swift */; };
+		C94C4A0E20789A9B0024FF71 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4A0D20789A9B0024FF71 /* TaskTableViewCell.swift */; };
+		C94C4A102078A56F0024FF71 /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4A0F2078A56F0024FF71 /* TaskService.swift */; };
+		C94C4A122078A7090024FF71 /* TastServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4A112078A7090024FF71 /* TastServiceType.swift */; };
+		C962C41F207895A1000CE3B4 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C962C41E207895A1000CE3B4 /* SceneCoordinatorType.swift */; };
+		C9894AF92077D3CB00E513B1 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9894AF82077D3CB00E513B1 /* Scene.swift */; };
+		C9894B002077D5DE00E513B1 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9894AFF2077D5DE00E513B1 /* TaskItem.swift */; };
+		C9894B022077D7C300E513B1 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9894B012077D7C300E513B1 /* BindableType.swift */; };
 		E29FC43BFE425BB72D1BB9C8 /* Pods_Egen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEFF34D5C1A0202339D71B8 /* Pods_Egen.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +107,13 @@
 		C94444C22058348400C97FDE /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		C94444C32058348400C97FDE /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		C94444C42058348400C97FDE /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		C94C4A0D20789A9B0024FF71 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		C94C4A0F2078A56F0024FF71 /* TaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskService.swift; path = "../../../../../../../yinjianchen/Desktop/My finder/我的开源/Egen/Egen/Services/TaskService.swift"; sourceTree = "<group>"; };
+		C94C4A112078A7090024FF71 /* TastServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastServiceType.swift; sourceTree = "<group>"; };
+		C962C41E207895A1000CE3B4 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
+		C9894AF82077D3CB00E513B1 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Scene.swift; path = "../../../../../../../yinjianchen/Desktop/My finder/我的开源/Egen/Egen/Scenes/Scene.swift"; sourceTree = "<group>"; };
+		C9894AFF2077D5DE00E513B1 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskItem.swift; path = "../../../../../../../yinjianchen/Desktop/My finder/我的开源/Egen/Egen/Model/TaskItem.swift"; sourceTree = "<group>"; };
+		C9894B012077D7C300E513B1 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		D9511A8D68CF1F6C14C66590 /* Pods-Egen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Egen/Pods-Egen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +167,12 @@
 		C9194F0A204D8B24002DCAC0 /* Egen */ = {
 			isa = PBXGroup;
 			children = (
+				C9894AFE2077D41200E513B1 /* Services */,
+				C9894AFD2077D40800E513B1 /* Extension */,
+				C9894AFC2077D40000E513B1 /* Cell */,
+				C9894AFB2077D3F500E513B1 /* Model */,
+				C9894AFA2077D3ED00E513B1 /* Controller */,
+				C9894AF72077D3AE00E513B1 /* Scenes */,
 				C944449F2058347B00C97FDE /* ThirdPart */,
 				C94444962058325C00C97FDE /* CardView */,
 				C9194F0B204D8B24002DCAC0 /* AppDelegate.swift */,
@@ -225,6 +245,55 @@
 				C94444C42058348400C97FDE /* ConstraintMakerRelatable.swift */,
 			);
 			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		C9894AF72077D3AE00E513B1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C962C41E207895A1000CE3B4 /* SceneCoordinatorType.swift */,
+				C9894AF82077D3CB00E513B1 /* Scene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C9894AFA2077D3ED00E513B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9894AFB2077D3F500E513B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9894AFF2077D5DE00E513B1 /* TaskItem.swift */,
+				C9894B012077D7C300E513B1 /* BindableType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9894AFC2077D40000E513B1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C94C4A0D20789A9B0024FF71 /* TaskTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C9894AFD2077D40800E513B1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C9894AFE2077D41200E513B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C94C4A0F2078A56F0024FF71 /* TaskService.swift */,
+				C94C4A112078A7090024FF71 /* TastServiceType.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,24 +407,34 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Egen/Pods-Egen-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,23 +449,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94C4A102078A56F0024FF71 /* TaskService.swift in Sources */,
 				C944449A205833AA00C97FDE /* ListCardView.swift in Sources */,
 				C94444D42058348400C97FDE /* ConstraintView.swift in Sources */,
 				C94444E72058348400C97FDE /* ConstraintMakerRelatable.swift in Sources */,
 				C94444E02058348400C97FDE /* Constraint.swift in Sources */,
+				C94C4A0E20789A9B0024FF71 /* TaskTableViewCell.swift in Sources */,
 				C94444DB2058348400C97FDE /* ConstraintMaker.swift in Sources */,
 				C94444D72058348400C97FDE /* Typealiases.swift in Sources */,
 				C94444982058339900C97FDE /* NormalView.swift in Sources */,
 				C9194F0E204D8B24002DCAC0 /* ViewController.swift in Sources */,
+				C94C4A122078A7090024FF71 /* TastServiceType.swift in Sources */,
 				C94444C92058348400C97FDE /* ConstraintAttributes.swift in Sources */,
 				C94444DA2058348400C97FDE /* ConstraintMakerEditable.swift in Sources */,
 				C94444D12058348400C97FDE /* ConstraintInsetTarget.swift in Sources */,
+				C9894B002077D5DE00E513B1 /* TaskItem.swift in Sources */,
 				C94444CA2058348400C97FDE /* ConstraintViewDSL.swift in Sources */,
 				C94444CE2058348400C97FDE /* ConstraintDSL.swift in Sources */,
 				C94444D92058348400C97FDE /* ConstraintOffsetTarget.swift in Sources */,
 				C94444DD2058348400C97FDE /* ConstraintLayoutGuideDSL.swift in Sources */,
 				C94444C82058348400C97FDE /* ConstraintMakerPriortizable.swift in Sources */,
 				C94444D02058348400C97FDE /* ConstraintPriority.swift in Sources */,
+				C9894AF92077D3CB00E513B1 /* Scene.swift in Sources */,
 				C94444CD2058348400C97FDE /* ConstraintMakerFinalizable.swift in Sources */,
 				C94444DC2058348400C97FDE /* ConstraintRelation.swift in Sources */,
 				C94444C52058348400C97FDE /* ConstraintMultiplierTarget.swift in Sources */,
@@ -397,12 +481,14 @@
 				C94444D62058348400C97FDE /* ConstraintLayoutSupport.swift in Sources */,
 				C94444D32058348400C97FDE /* UILayoutSupport+Extensions.swift in Sources */,
 				C94444CB2058348400C97FDE /* ConstraintPriorityTarget.swift in Sources */,
+				C962C41F207895A1000CE3B4 /* SceneCoordinatorType.swift in Sources */,
 				C94444DF2058348400C97FDE /* ConstraintItem.swift in Sources */,
 				C94444E52058348400C97FDE /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				C94444D52058348400C97FDE /* ConstraintLayoutGuide.swift in Sources */,
 				C94444D22058348400C97FDE /* ConstraintConfig.swift in Sources */,
 				C94444E42058348400C97FDE /* LayoutConstraint.swift in Sources */,
 				C94444CC2058348400C97FDE /* ConstraintInsets.swift in Sources */,
+				C9894B022077D7C300E513B1 /* BindableType.swift in Sources */,
 				C94444D82058348400C97FDE /* ConstraintConstantTarget.swift in Sources */,
 				C94444E62058348400C97FDE /* ConstraintLayoutSupportDSL.swift in Sources */,
 				C94444CF2058348400C97FDE /* ConstraintMakerExtendable.swift in Sources */,
@@ -554,7 +640,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47RFMS75C8;
 				INFOPLIST_FILE = Egen/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = YinTokey.Egen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -570,7 +659,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47RFMS75C8;
 				INFOPLIST_FILE = Egen/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = YinTokey.Egen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

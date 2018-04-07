@@ -1,4 +1,7 @@
 PODS:
+  - Action (3.5.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - Alamofire (4.7.1)
   - Differentiator (3.0.2)
   - Kingfisher (4.6.4)
@@ -10,6 +13,13 @@ PODS:
   - Moya/RxSwift (11.0.2):
     - Moya/Core
     - RxSwift (~> 4.0)
+  - NSObject+Rx (4.3.0):
+    - RxSwift (~> 4.0)
+  - Realm (3.3.2):
+    - Realm/Headers (= 3.3.2)
+  - Realm/Headers (3.3.2)
+  - RealmSwift (3.3.2):
+    - Realm (= 3.3.2)
   - Result (3.2.4)
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
@@ -17,26 +27,38 @@ PODS:
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
+  - RxRealm (0.7.5):
+    - RealmSwift (~> 3.0)
+    - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
 
 DEPENDENCIES:
+  - Action (~> 3.4)
   - Kingfisher
   - Moya
   - Moya/RxSwift
+  - NSObject+Rx (~> 4.1)
+  - RealmSwift (~> 3.0)
   - RxCocoa (~> 4.0)
   - RxDataSources
+  - RxRealm (~> 0.7)
   - RxSwift (~> 4.0)
 
 SPEC CHECKSUMS:
+  Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
   Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
   Moya: a725035953bc1c0eb1be505ab903984501d82440
+  NSObject+Rx: 9a5eeff5e08156f849fa973514456f28eef08742
+  Realm: d927fbf66df5532cfafc08afb5f7e53ded37b894
+  RealmSwift: 4e903a494e05d866581d69ad6f7e7b879d446baf
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
   RxSwift: e49536837d9901277638493ea537394d4b55f570
 
-PODFILE CHECKSUM: 93afe5af774cd2c7be8051ca49b387fad0ba4a18
+PODFILE CHECKSUM: 183c5262ae782d7518995fa7df0fb10db05ad713
 
 COCOAPODS: 1.4.0
