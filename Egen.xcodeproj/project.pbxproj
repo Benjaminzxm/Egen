@@ -52,6 +52,9 @@
 		C94C4A0E20789A9B0024FF71 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4A0D20789A9B0024FF71 /* TaskTableViewCell.swift */; };
 		C94C4A102078A56F0024FF71 /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4A0F2078A56F0024FF71 /* TaskService.swift */; };
 		C94C4A122078A7090024FF71 /* TastServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4A112078A7090024FF71 /* TastServiceType.swift */; };
+		C94C4A142078AAA70024FF71 /* UINavigationController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4A132078AAA70024FF71 /* UINavigationController+Rx.swift */; };
+		C94C4A162078ADF90024FF71 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4A152078ADF90024FF71 /* TaskViewModel.swift */; };
+		C94C4A182078B39A0024FF71 /* EditTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4A172078B39A0024FF71 /* EditTaskViewModel.swift */; };
 		C962C41F207895A1000CE3B4 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C962C41E207895A1000CE3B4 /* SceneCoordinatorType.swift */; };
 		C9894AF92077D3CB00E513B1 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9894AF82077D3CB00E513B1 /* Scene.swift */; };
 		C9894B002077D5DE00E513B1 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9894AFF2077D5DE00E513B1 /* TaskItem.swift */; };
@@ -110,6 +113,9 @@
 		C94C4A0D20789A9B0024FF71 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		C94C4A0F2078A56F0024FF71 /* TaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskService.swift; path = "../../../../../../../yinjianchen/Desktop/My finder/我的开源/Egen/Egen/Services/TaskService.swift"; sourceTree = "<group>"; };
 		C94C4A112078A7090024FF71 /* TastServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastServiceType.swift; sourceTree = "<group>"; };
+		C94C4A132078AAA70024FF71 /* UINavigationController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Rx.swift"; sourceTree = "<group>"; };
+		C94C4A152078ADF90024FF71 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskViewModel.swift; path = "../../../../../../../yinjianchen/Desktop/My finder/我的开源/Egen/Egen/Controller/TaskViewModel.swift"; sourceTree = "<group>"; };
+		C94C4A172078B39A0024FF71 /* EditTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewModel.swift; sourceTree = "<group>"; };
 		C962C41E207895A1000CE3B4 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		C9894AF82077D3CB00E513B1 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Scene.swift; path = "../../../../../../../yinjianchen/Desktop/My finder/我的开源/Egen/Egen/Scenes/Scene.swift"; sourceTree = "<group>"; };
 		C9894AFF2077D5DE00E513B1 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskItem.swift; path = "../../../../../../../yinjianchen/Desktop/My finder/我的开源/Egen/Egen/Model/TaskItem.swift"; sourceTree = "<group>"; };
@@ -259,6 +265,8 @@
 		C9894AFA2077D3ED00E513B1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C94C4A152078ADF90024FF71 /* TaskViewModel.swift */,
+				C94C4A172078B39A0024FF71 /* EditTaskViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,6 +291,7 @@
 		C9894AFD2077D40800E513B1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C94C4A132078AAA70024FF71 /* UINavigationController+Rx.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -455,6 +464,8 @@
 				C94444E72058348400C97FDE /* ConstraintMakerRelatable.swift in Sources */,
 				C94444E02058348400C97FDE /* Constraint.swift in Sources */,
 				C94C4A0E20789A9B0024FF71 /* TaskTableViewCell.swift in Sources */,
+				C94C4A162078ADF90024FF71 /* TaskViewModel.swift in Sources */,
+				C94C4A182078B39A0024FF71 /* EditTaskViewModel.swift in Sources */,
 				C94444DB2058348400C97FDE /* ConstraintMaker.swift in Sources */,
 				C94444D72058348400C97FDE /* Typealiases.swift in Sources */,
 				C94444982058339900C97FDE /* NormalView.swift in Sources */,
@@ -480,6 +491,7 @@
 				C94444C62058348400C97FDE /* LayoutConstraintItem.swift in Sources */,
 				C94444D62058348400C97FDE /* ConstraintLayoutSupport.swift in Sources */,
 				C94444D32058348400C97FDE /* UILayoutSupport+Extensions.swift in Sources */,
+				C94C4A142078AAA70024FF71 /* UINavigationController+Rx.swift in Sources */,
 				C94444CB2058348400C97FDE /* ConstraintPriorityTarget.swift in Sources */,
 				C962C41F207895A1000CE3B4 /* SceneCoordinatorType.swift in Sources */,
 				C94444DF2058348400C97FDE /* ConstraintItem.swift in Sources */,

@@ -54,7 +54,7 @@ class TaskTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         button.rx.action = nil
-        DisposeBag = DisposeBag()
+        disposeBag = DisposeBag()
         super.prepareForReuse()
     }
     

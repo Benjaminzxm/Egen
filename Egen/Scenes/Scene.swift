@@ -8,6 +8,7 @@
 
 import Foundation
 
-enum Scene{
-   
+enum Scene {
+    case tasks(TasksViewModel)
+    case editTask(EditTaskViewModel)
 }
