@@ -59,6 +59,8 @@
 		C9894AF92077D3CB00E513B1 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9894AF82077D3CB00E513B1 /* Scene.swift */; };
 		C9894B002077D5DE00E513B1 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9894AFF2077D5DE00E513B1 /* TaskItem.swift */; };
 		C9894B022077D7C300E513B1 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9894B012077D7C300E513B1 /* BindableType.swift */; };
+		C99557A9207A68B6003EC0D0 /* CollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99557A8207A68B6003EC0D0 /* CollectionController.swift */; };
+		C99557AB207A693A003EC0D0 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99557AA207A693A003EC0D0 /* ItemCell.swift */; };
 		E29FC43BFE425BB72D1BB9C8 /* Pods_Egen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEFF34D5C1A0202339D71B8 /* Pods_Egen.framework */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +122,8 @@
 		C9894AF82077D3CB00E513B1 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Scene.swift; path = "../../../../../../../yinjianchen/Desktop/My finder/我的开源/Egen/Egen/Scenes/Scene.swift"; sourceTree = "<group>"; };
 		C9894AFF2077D5DE00E513B1 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskItem.swift; path = "../../../../../../../yinjianchen/Desktop/My finder/我的开源/Egen/Egen/Model/TaskItem.swift"; sourceTree = "<group>"; };
 		C9894B012077D7C300E513B1 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		C99557A8207A68B6003EC0D0 /* CollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionController.swift; sourceTree = "<group>"; };
+		C99557AA207A693A003EC0D0 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemCell.swift; path = "../../../../../../../yinjianchen/Desktop/My finder/我的开源/Egen/Egen/Cell/ItemCell.swift"; sourceTree = "<group>"; };
 		D9511A8D68CF1F6C14C66590 /* Pods-Egen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Egen/Pods-Egen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -267,6 +271,7 @@
 			children = (
 				C94C4A152078ADF90024FF71 /* TaskViewModel.swift */,
 				C94C4A172078B39A0024FF71 /* EditTaskViewModel.swift */,
+				C99557A8207A68B6003EC0D0 /* CollectionController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				C94C4A0D20789A9B0024FF71 /* TaskTableViewCell.swift */,
+				C99557AA207A693A003EC0D0 /* ItemCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -502,8 +508,10 @@
 				C94444CC2058348400C97FDE /* ConstraintInsets.swift in Sources */,
 				C9894B022077D7C300E513B1 /* BindableType.swift in Sources */,
 				C94444D82058348400C97FDE /* ConstraintConstantTarget.swift in Sources */,
+				C99557AB207A693A003EC0D0 /* ItemCell.swift in Sources */,
 				C94444E62058348400C97FDE /* ConstraintLayoutSupportDSL.swift in Sources */,
 				C94444CF2058348400C97FDE /* ConstraintMakerExtendable.swift in Sources */,
+				C99557A9207A68B6003EC0D0 /* CollectionController.swift in Sources */,
 				C94444E22058348400C97FDE /* ConstraintRelatableTarget.swift in Sources */,
 				C94444C72058348400C97FDE /* ConstraintDescription.swift in Sources */,
 			);
